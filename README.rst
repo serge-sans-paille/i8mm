@@ -314,9 +314,12 @@ maddw(x & 0x7f, y, z))``. But of course this is slower :-).
 
 This approximation is `relatively common in machine learning
 <https://github.com/official-stockfish/nnue-pytorch/blob/master/docs/nnue.md#m256_add_dpbusd_epi32>`_, and people have
-been `biten by this
+been `bitten by this
 <https://github.com/official-stockfish/Stockfish/pull/3261>`_.
 
+People interested in operations on int8 in the context of meachine learning can
+dive into this `OneAPI article
+<https://oneapi-src.github.io/oneDNN/v1.5/dev_guide_int8_computations.html>`_.
 
 Benchmarks
 ----------
